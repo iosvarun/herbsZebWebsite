@@ -33,60 +33,18 @@ export const LoadingScreen: React.FC = () => {
               className="absolute w-48 h-48 bg-[#8FA89B]/10 rounded-full blur-2xl"
             />
 
-            {/* Premium Logo Frame */}
+            {/* Premium Logo Image */}
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="relative w-32 h-32 md:w-36 md:h-36 rounded-full border-2 border-[#113E21] flex items-center justify-center bg-white shadow-xl shadow-emerald-950/5"
+              className="relative w-64 h-20 md:w-80 md:h-24 flex items-center justify-center"
             >
-              {/* SVG representation of the HerbsZen circular logo from the letterhead */}
-              <svg
-                viewBox="0 0 100 100"
-                className="w-24 h-24 text-[#113E21]"
-                fill="currentColor"
-              >
-                {/* Decorative leaves */}
-                <path
-                  d="M50 15 C52 22 46 26 42 22 C38 18 45 12 50 15 Z"
-                  className="fill-[#3B7A57] opacity-80"
-                />
-                <path
-                  d="M58 18 C62 24 57 28 53 25 C49 22 54 15 58 18 Z"
-                  className="fill-[#8FA89B]"
-                />
-                <path
-                  d="M66 23 C70 28 67 33 63 30 C59 27 62 20 66 23 Z"
-                  className="fill-[#3B7A57]"
-                />
-                
-                {/* Logo Text "HerbsZen" */}
-                <text
-                  x="50"
-                  y="55"
-                  fontFamily="'Cormorant Garamond', serif"
-                  fontSize="15"
-                  fontWeight="bold"
-                  fontStyle="italic"
-                  textAnchor="middle"
-                  letterSpacing="-0.5"
-                  className="fill-[#113E21]"
-                >
-                  Herbs
-                </text>
-                <text
-                  x="50"
-                  y="70"
-                  fontFamily="'Inter', sans-serif"
-                  fontSize="12"
-                  fontWeight="800"
-                  textAnchor="middle"
-                  letterSpacing="1.5"
-                  className="fill-[#3B7A57]"
-                >
-                  ZEN
-                </text>
-              </svg>
+              <img
+                src="/images/logo.png"
+                alt="HerbsZen Logo"
+                className="object-contain w-full h-full"
+              />
             </motion.div>
 
             {/* Brand details */}
@@ -96,10 +54,7 @@ export const LoadingScreen: React.FC = () => {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="mt-6 text-center"
             >
-              <h1 className="font-serif text-[#113E21] text-lg md:text-xl font-bold tracking-wide">
-                HERBSZEN
-              </h1>
-              <p className="text-xs text-[#8FA89B] tracking-[0.25em] uppercase font-sans mt-1">
+              <p className="text-xs text-[#8FA89B] tracking-[0.25em] uppercase font-sans">
                 Nature's Wisdom • Modern Wellness
               </p>
             </motion.div>
