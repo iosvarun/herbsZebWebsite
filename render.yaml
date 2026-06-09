@@ -8,6 +8,8 @@ services:
       - key: SMTP_USER
         value: herbszen007@gmail.com
       - key: SMTP_PASS
-        placeholder: "Your 16-character Google App Password"
+        value: replace-with-your-app-password
+        sync: false
       - key: MONGODB_URI
-        placeholder: "Your MongoDB Atlas Connection String (Optional, falls back to local file DB)"
+        value: replace-with-your-mongodb-connection-string
+        sync: false
