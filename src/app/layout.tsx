@@ -19,18 +19,27 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "HerbsZen | Premium Ayurvedic Health & Wellness",
   description: "HERBSZEN PRIVATE LIMITED - Nature’s Wisdom, Modern Wellness. Standardized Ayurvedic extracts for Pain Relief, Kidney Health, Hair Care, and Daily Nutrition.",
-  metadataBase: new URL("https://herbszen.com"),
+  metadataBase: new URL("https://herbszen.onrender.com"),
   openGraph: {
     title: "HerbsZen | Premium Ayurvedic Health & Wellness",
     description: "Nature's Wisdom, Modern Wellness. Standardized Ayurvedic solutions for Pain Relief, Kidney Health, Hair Care, and Daily Nutrition.",
     type: "website",
     locale: "en_IN",
     siteName: "HerbsZen",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1024,
+        height: 512,
+        alt: "HerbsZen Logo",
+      }
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "HerbsZen | Premium Ayurvedic Health & Wellness",
     description: "Standardized Ayurvedic solutions for Pain Relief, Kidney Health, Hair Care, and Daily Nutrition.",
+    images: ["/images/og-image.jpg"],
   }
 };
 
