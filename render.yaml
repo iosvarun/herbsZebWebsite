@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: herbszen
+    runtime: node
+    buildCommand: npm run build
+    startCommand: npm run start
+    envVars:
+      - key: SMTP_USER
+        value: herbszen007@gmail.com
+      - key: SMTP_PASS
+        placeholder: "Your 16-character Google App Password"
+      - key: MONGODB_URI
+        placeholder: "Your MongoDB Atlas Connection String (Optional, falls back to local file DB)"
