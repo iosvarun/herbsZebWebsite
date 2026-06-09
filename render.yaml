@@ -4,6 +4,7 @@ services:
     runtime: node
     buildCommand: npm run build
     startCommand: npm run start
+    autoDeploy: false
     envVars:
       - key: SMTP_USER
         value: herbszen007@gmail.com
