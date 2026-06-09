@@ -8,8 +8,6 @@ services:
       - key: SMTP_USER
         value: herbszen007@gmail.com
       - key: SMTP_PASS
-        value: replace-with-your-app-password
         sync: false
       - key: MONGODB_URI
-        value: replace-with-your-mongodb-connection-string
         sync: false
